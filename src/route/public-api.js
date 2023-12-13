@@ -108,7 +108,11 @@ userRouter.get('/bali-destination', (req,res)=>{
 
 //halaman invoice
 
-    userRouter.get('/invoice', (req, res)=> {
+    // userRouter.get('/invoice', (req, res)=> {
+    //     res.render('invoice')
+    // })
+
+    userRouter.get('/invoice',(req, res)=>{
         res.render('invoice')
     })
 
