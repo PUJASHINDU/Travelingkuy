@@ -1,11 +1,12 @@
 import express from "express";
 import UserController from "../controller/user-controller.js";
-import userController from "../controller/user-controller.js";
+
 const publicRouter = new express.Router()
 publicRouter.post('/api/users',UserController.register)
 publicRouter.post('/api/users/login',userController.login)
 publicRouter.post('/api/users/booking',userController.booking)
 
+<<<<<<< HEAD
 const userRouter = new express.Router()
 
 //halaman home
@@ -130,8 +131,9 @@ userRouter.get('/bali-destination', (req,res)=>{
 
 })
 
+=======
+>>>>>>> bbc54283a53d4259875e679c86e2308e4444baf8
 
 export {
-    publicRouter, userRouter
+    publicRouter,
 }
-
