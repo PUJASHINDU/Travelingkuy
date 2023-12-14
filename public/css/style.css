@@ -726,7 +726,12 @@ textarea {
   height: 90px;
 } 
 /* end feadback */
-
+#usernameDisplay {
+  color: orange; 
+  font-size: 16px; 
+  font-weight: bold; 
+  margin-right: 20px; 
+}
 footer{
   background-color: #084c57;
   height: auto;

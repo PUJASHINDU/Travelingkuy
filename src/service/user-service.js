@@ -105,12 +105,10 @@ const get = async (contactId) => {
             id: contactId
         },
 
-        select: {
-            id: true,
-            full_name: true,
-            phone: true,
-            email: true
+        include:{
+            destination: true
         }
+
     });
 
     if (!contact) {

@@ -5,6 +5,12 @@ const userRouter = new express.Router()
 
 userRouter.get('/invoice/:id',userController.get)
 
+// index after login
+
+userRouter.get('/index-after-login', (req,res)=>{
+    res.render('index-after-login')
+})
+
 //halaman booking now
 userRouter.get('/booking-now', (req,res)=>{
     res.render('Booking-now')

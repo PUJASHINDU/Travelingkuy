@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking-Now</title>
     <link rel="stylesheet" href="../css/booking-now.css">
+    <script src="../js/Booking.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="/css/query.css">
@@ -22,7 +23,7 @@
 <body>
     <header class="header">
         <div class="button-back">
-            <button><a href="Bali-destination"> Back Home </a></button>
+            <button><a href="Bali-destination.html"> Back Home </a></button>
         </div>
         <div class="label-head">
             <h3>Booking Now</h3>
@@ -56,13 +57,13 @@
                 </div>
                 <div class="input-box address">
                     <label>Booking Details</label>
-                    <input type="text" id="hotelName" name="hotelName" readonly />
-                    <input type="text" type="text" id="hotelAddress" name="hotelAddress" readonly />
-                    <input type="text" id="guideName" name="guideName" readonly />
-                    <input type="text" id="guidePrice" name="guidePrice" readonly />
+                    <input type="text" id="id_destination" value="Hotel Serenity Palace" placeholder="Hotel Name"  required readonly/>
+                    <input type="text" type="text" id="hotelAddress" value="Canggu, Denpasar" readonly />
+                    <input type="text" id="guideName" value="Jhon Doe" readonly />
+                    <input type="text" id="guidePrice" value="$200" readonly />
                     <div class="column">
-                        <input type="text" id="vehicleName" name="vehicleName" readonly />
-                        <input type="text" id="policeNumber" name="policeNumber" readonly />
+                        <input type="text" id="vehicleName" value="AVP CAR" readonly />
+                        <input type="text" id="policeNumber" value="B 1234 BCD" readonly />
                     </div>
                 </div>
                 <div class="input-box">
@@ -120,7 +121,7 @@
             // Tambahkan field lain sesuai kebutuhan
             if (id) {
                 // Buka halaman invoice
-                // window.location.href = `/invoice/${id}`;
+                // window.location.href = /invoice/${id};
                 window.open(`/invoice/${id}`, '_blank');
             } else {
                 console.error('ID booking tidak valid atau tidak ditemukan.');

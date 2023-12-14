@@ -19,3 +19,10 @@ SELECT * FROM destination
 
 
 SELECT * FROM contacts
+
+
+SELECT * FROM contacts
+
+USE trave
+
+SELECT * FROM destination

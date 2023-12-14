@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bali-destination</title>
+    <title>Invocie</title>
     <link rel="stylesheet" href="../css/invoice.css">
     <!-- <script src="../js/Booking.js"></script> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,31 +40,31 @@
             </tr>
             <tr>
                 <td>Nama Hotel</td>
-                <td>Hotel Serenity Palace</td>
+                <td><%= data.destination.name_hotel%></td>
             </tr>
             <tr>
                 <td>Hotel Addrese</td>
-                <td>Canggu, Denpasar</td>
+                <td><%= data.destination.hotel_addres%></td>
             </tr>
             <tr>
                 <td>Price</td>
-                <td>$200</td>
+                <td><%= data.destination.price%></td>
             </tr>
             <tr>
                 <td>Vehicle Name</td>
-                <td>AVP CAR</td>
+                <td><%= data.destination.vehicle_name%></td>
             </tr>
             <tr>
                 <td>Police Number</td>
-                <td>B 1234 NDC</td>
+                <td><%= data.destination.police_number%></td>
             </tr>
             <tr>
                 <td>Guide Name</td>
-                <td>Jhon Doe</td>
+                <td><%= data.destination.guide_name%></td>
             </tr>
             <tr>
                 <td>Destination Price</td>
-                <td>$510.00 USD</td>
+                <td><%= data.destination.destination_price%></td>
             </tr>
 
         </table>
